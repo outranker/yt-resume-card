@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./assets/bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: rgb(54, 53, 53);
+  text-align: center;
+}
+
+.container {
+  height: 55rem;
+  width: 45rem;
+  border: 3px solid white;
+  padding: 3.2rem 4.6rem;
+  border-radius: 3.2rem;
+  background-color: rgba(255, 255, 255, 0.428);
+  backdrop-filter: blur(2px);
+}
+
+.img-box {
+  height: 9.6rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+}
+
+.name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 1.6rem 0;
+}
+.job {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 1.2rem 0;
+}
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.4rem;
+
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 3.6rem;
+}
+
+.location svg {
+  height: 2.2rem;
+  width: 2.2rem;
+  stroke: currentColor;
+}
+.location p {
+  display: inline;
+  margin-left: 4px;
+}
+
+.stats-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 1.8rem;
+  row-gap: 1rem;
+}
+
+.stats-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.stats-title {
+  text-transform: uppercase;
+  margin-bottom: 4.6rem;
+}
+
+.socials-box {
+  margin-bottom: 3.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 6.8rem;
+  margin-right: 6.8rem;
+}
+.socials-link,
+.socials-link:link,
+.socials-link:visited {
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+
+.linkedin-svg {
+  background-image: linear-gradient(to left bottom, #378fe9, #0a66c2);
+  border-radius: 1.8rem;
+  stroke: #fff;
+  width: 4.6rem;
+  height: 4.6rem;
+  padding: 1rem;
+}
+.github-svg {
+  background-image: linear-gradient(to left bottom, #7d848d, #545d68);
+  border-radius: 1.8rem;
+  stroke: #fff;
+  width: 4.6rem;
+  height: 4.6rem;
+  padding: 1rem;
+}
+.twitter-svg {
+  background-image: linear-gradient(to left bottom, #1da1f2, #0e71c8);
+  border-radius: 1.8rem;
+  stroke: #fff;
+  width: 4.6rem;
+  height: 4.6rem;
+  padding: 1rem;
+}
+
+.cta-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.6rem;
+}
+
+button,
+button:link,
+button:visited {
+  display: inline;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.8rem 2.6rem;
+  border-radius: 2rem;
+}
+
+.blue-btn {
+  background-image: linear-gradient(to right, #4dabf7, #1c7ed6);
+  color: white;
+}
+.red-btn {
+  background-image: linear-gradient(to right, #e03131, #fd7e14);
+  color: white;
+}
