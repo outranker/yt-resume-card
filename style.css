@@ -13,7 +13,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("./assets/bg.webp");
+  background-image: url("./assets/bg3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -34,10 +34,18 @@ body {
 }
 
 .img-box {
+  margin: auto;
   height: 9.6rem;
+  width: 9.6rem;
   display: flex;
   justify-content: center;
   margin-bottom: 2.4rem;
+}
+
+.my-img {
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 1rem 6rem 0.5rem rgba(111, 107, 107, 0.428);
 }
 
 .name {
@@ -99,6 +107,11 @@ body {
   margin-left: 6.8rem;
   margin-right: 6.8rem;
 }
+
+.socials-link svg {
+  transition: all 0.3s;
+}
+
 .socials-link,
 .socials-link:link,
 .socials-link:visited {
@@ -106,6 +119,18 @@ body {
   cursor: pointer;
   border: none;
   display: inline-block;
+}
+
+.socials-link svg,
+.socials-link:link svg,
+.socials-link:visited svg {
+  box-shadow: 0 0.5rem 4rem 0.1rem rgb(151, 143, 143);
+}
+
+.socials-link svg:active,
+.socials-link svg:hover {
+  box-shadow: 0 0.5rem 4rem 0.1rem rgb(122, 116, 116);
+  transform: scale(1.1);
 }
 
 .linkedin-svg {
@@ -150,8 +175,20 @@ button:visited {
   font-weight: 600;
   padding: 0.8rem 2.6rem;
   border-radius: 2rem;
+  box-shadow: 0 0.5rem 3rem 0.05rem rgb(174, 164, 164);
+  transition: all 0.3s;
+  background-size: 200% auto;
 }
 
+button:active,
+button:hover {
+  box-shadow: 0 0.5rem 3rem 0.1rem rgb(154, 145, 145);
+  background-position: left center;
+}
+
+.blue-btn:hover {
+  background-position: left center;
+}
 .blue-btn {
   background-image: linear-gradient(to right, #4dabf7, #1c7ed6);
   color: white;
