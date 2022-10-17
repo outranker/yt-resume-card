@@ -26,11 +26,11 @@ body {
 .container {
   height: 55rem;
   width: 45rem;
-  border: 3px solid white;
   padding: 3.2rem 4.6rem;
   border-radius: 3.2rem;
   background-color: rgba(255, 255, 255, 0.428);
   backdrop-filter: blur(2px);
+  box-shadow: 0 1rem 6rem 1rem rgba(111, 107, 107, 0.428);
 }
 
 .img-box {
@@ -43,6 +43,8 @@ body {
 }
 
 .my-img {
+  width: 12rem;
+  height: 9.65rem;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 1rem 6rem 0.5rem rgba(111, 107, 107, 0.428);
